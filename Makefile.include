@@ -91,7 +91,7 @@ else
 CFLAGS   += -DHEADLESS=0
 
 CFLAGS   += -I/usr/include/SDL2 -D_REENTRANT
-LDLIBS   += -lSDL2
+LDLIBS   += -L/usr/lib/i686-linux-gnu -lSDL2 -Wl,--no-undefined -lm -ldl -lasound -lm -ldl -lpthread -lpulse-simple -lpulse -lsndio -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lpthread -lrt
 endif
 
 else
