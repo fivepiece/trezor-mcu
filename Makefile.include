@@ -104,7 +104,7 @@ endif
 
 CFLAGS   += -DEMULATOR=0
 
-LDFLAGS  += --static -static \
+LDFLAGS  += --static \
             -Wl,--start-group \
             -lc \
             -lgcc \
