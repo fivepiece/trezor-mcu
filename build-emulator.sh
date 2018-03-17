@@ -17,4 +17,4 @@ docker run -t -v $(pwd)/build:/build:z $IMAGE /bin/sh -c "\
 	EMULATOR=1 make -C emulator && \
 	EMULATOR=1 make -C firmware && \
 	cp firmware/trezor.elf /$ELFFILE && \
-    cp /usr/lib/i386-linux-gnu/libSDL2* /"
+    cp /usr/lib/i386-linux-gnu/libSDL2* /build/"
