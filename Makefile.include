@@ -91,7 +91,7 @@ else
 CFLAGS   += -DHEADLESS=0
 
 CFLAGS   += -I/usr/include/SDL2 -D_REENTRANT
-LDLIBS   += -L/usr/lib/i686-linux-gnu -lSDL2
+LDLIBS   += -lSDL2
 endif
 
 else
